@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4876D089-FE94-46C6-9A72-71E23F9A2B79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Face</RootNamespace>
+    <AssemblyName>Face</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JsonHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaiduFace.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity.cs" />
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\index.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\swiper.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\act_1.png" />
+    <Content Include="Images\act_2.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\btn.png" />
+    <Content Include="Images\btn1.png" />
+    <Content Include="Images\btn2.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\l_tt.png" />
+    <Content Include="Images\music.mp3" />
+    <Content Include="Images\music.png" />
+    <Content Include="Images\ren1.png" />
+    <Content Include="Images\ren2.png" />
+    <Content Include="Images\r_tt.png" />
+    <Content Include="Images\say.png" />
+    <Content Include="Images\sc.png" />
+    <Content Include="Images\Share.png" />
+    <Content Include="Images\shou.png" />
+    <Content Include="Images\shouji.png" />
+    <Content Include="Images\sub_icon1.png" />
+    <Content Include="Images\sub_icon2.png" />
+    <Content Include="Images\sub_sj.png" />
+    <Content Include="Images\sub_tt1.png" />
+    <Content Include="Images\sub_tt2.png" />
+    <Content Include="Images\sub_txt.png" />
+    <Content Include="Images\title.png" />
+    <Content Include="Images\zuiba.png" />
+    <Content Include="Images\百度-谁是抢镜王5-01.jpg" />
+    <Content Include="Images\百度-谁是抢镜王5-02.jpg" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.edmx.sql" />
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\ai.0.15.0-build58334.js" />
+    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Face.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\exif.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lrz.js" />
+    <Content Include="Scripts\mobileFix.mini.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="staticfs\0559da7a8c9c6628af73c9e939d18c62.png" />
+    <Content Include="staticfs\06d160425b373a9c94e7eeded3e31399.png" />
+    <Content Include="staticfs\28e9658cf8863a64182375b1ded0b30e.png" />
+    <Content Include="staticfs\2cb0e6a0cebf188ece7963b0bb327c34.png" />
+    <Content Include="staticfs\42dcc242d720641da253c2ad5ff9d780.png" />
+    <Content Include="staticfs\4f3ee71172f65ee445bd552953dbe120.png" />
+    <Content Include="staticfs\584301ff72c7547eab3239f848797daf.png" />
+    <Content Include="staticfs\5bae7e8bf9fd735effb98dc3588cfe58.png" />
+    <Content Include="staticfs\64fd7185e06c35ef83e237b642a178ed.png" />
+    <Content Include="staticfs\6d24d67df91604113650aa6295298b38.png" />
+    <Content Include="staticfs\893583d17d35af72c9fd158d4dfddf58.png" />
+    <Content Include="staticfs\admin-epub360\browser-old.html" />
+    <Content Include="staticfs\admin-epub360\img\thumb.png" />
+    <Content Include="staticfs\admin-epub360\public\loading.gif" />
+    <Content Include="staticfs\admin-epub360\public\loading32x32.gif" />
+    <Content Include="staticfs\aea13acf76c623068c92854d1d2ba962.png" />
+    <Content Include="staticfs\b644b412ad278884db95412f713d8d40.jpg" />
+    <Content Include="staticfs\bf8151f7ccde4a6301b16a1e70d0b880.png" />
+    <Content Include="staticfs\c9e337d475226285f956f0e84b7a54b8.png" />
+    <Content Include="staticfs\cae2dbdf28676ee64dc11289a10a0092.png" />
+    <Content Include="staticfs\cf5302813665dfcb850219068e0f59a8.png" />
+    <Content Include="staticfs\common\css\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="staticfs\common\css\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="staticfs\common\css\font-awesome\css\font-awesome.css" />
+    <Content Include="staticfs\common\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="staticfs\common\css\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="staticfs\common\js\g\device.js" />
+    <Content Include="staticfs\common\js\interaction_edit\template\map_google.html" />
+    <Content Include="staticfs\common\js\interaction_edit\template\map_qq.html" />
+    <Content Include="staticfs\common\js\jquery\jquery-1.8.1.js" />
+    <Content Include="staticfs\common\js\jswait\jswait.gif" />
+    <Content Include="staticfs\common\js\jswait\jswait.png" />
+    <Content Include="staticfs\common\js\jwplayer\HLSProvider6.swf" />
+    <Content Include="staticfs\common\js\jwplayer\jwplayer.flash.swf" />
+    <Content Include="staticfs\common\js\jwplayer\jwplayer.html5.js" />
+    <Content Include="staticfs\common\js\jwplayer\jwplayer.js" />
+    <Content Include="staticfs\common\js\jwplayer\README.html" />
+    <Content Include="staticfs\common\js\mediaelementjs\background.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\bigplay.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\bigplay.svg" />
+    <Content Include="staticfs\common\js\mediaelementjs\controls-ted.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\controls-wmp-bg.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\controls-wmp.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\controls.png" />
+    <Content Include="staticfs\common\js\mediaelementjs\controls.svg" />
+    <Content Include="staticfs\common\js\mediaelementjs\flashmediaelement-cdn.swf" />
+    <Content Include="staticfs\common\js\mediaelementjs\flashmediaelement.swf" />
+    <Content Include="staticfs\common\js\mediaelementjs\loading.gif" />
+    <Content Include="staticfs\common\js\mediaelementjs\silverlightmediaelement.xap" />
+    <Content Include="staticfs\common\js\play\img\ajax-loader.gif" />
+    <Content Include="staticfs\common\js\play\img\icon_logo_gray.png" />
+    <Content Include="staticfs\common\js\play\img\icon_more.png" />
+    <Content Include="staticfs\common\js\requireJS\require.js" />
+    <Content Include="staticfs\dcbb3dff8f28fea1c582635a188d57d5.png" />
+    <Content Include="staticfs\diazo\css-built\newcbtview_built2013031.css" />
+    <Content Include="staticfs\diazo\img\audiobar\maximum_track%402x.png" />
+    <Content Include="staticfs\diazo\img\audiobar\media_pause%402x.png" />
+    <Content Include="staticfs\diazo\img\audiobar\media_play%402x.png" />
+    <Content Include="staticfs\diazo\img\audiobar\minimum_track%402x.png" />
+    <Content Include="staticfs\diazo\img\audiobar\slider_thumb%402x.png" />
+    <Content Include="staticfs\diazo\img\audiobar\slider_thumb%402x副本.png" />
+    <Content Include="staticfs\diazo\img\glyphicons-halflings.png" />
+    <Content Include="staticfs\diazo\img\icon_fs.png" />
+    <Content Include="staticfs\diazo\img\icon_more.png" />
+    <Content Include="staticfs\diazo\img\icon_more_active.png" />
+    <Content Include="staticfs\diazo\img\map\bus.png" />
+    <Content Include="staticfs\diazo\img\map\busicon.png" />
+    <Content Include="staticfs\diazo\img\map\close.png" />
+    <Content Include="staticfs\diazo\img\map\drive.png" />
+    <Content Include="staticfs\diazo\img\map\exit.png" />
+    <Content Include="staticfs\diazo\img\map\navigate.png" />
+    <Content Include="staticfs\diazo\img\map\trans_icons.png" />
+    <Content Include="staticfs\diazo\img\map\turning.png" />
+    <Content Include="staticfs\diazo\img\msg\icon_close.png" />
+    <Content Include="staticfs\diazo\img\msg\icon_warn.png" />
+    <Content Include="staticfs\diazo\img\screendirectionlock.png" />
+    <Content Include="staticfs\diazo\js-built\interaction\cbtview-build2013031.js" />
+    <Content Include="staticfs\diazo\js\app\main\interaction\iDevice.js" />
+    <Content Include="staticfs\diazo\js\app\settings\requirejs_config.js" />
+    <Content Include="staticfs\diazo\player-built\base.built.0127763d.cache.js" />
+    <Content Include="staticfs\diazo\player-built\mobileview.built.cb47a88e.cache.js" />
+    <Content Include="staticfs\diazo\player-built\mobileview.built.f23fff91.cache.css" />
+    <Content Include="staticfs\diazo\player-built\require.built.5bc217a6.cache.js" />
+    <Content Include="staticfs\diazo\player-built\touchview.built.99eef740.cache.js" />
+    <Content Include="staticfs\diazo\player-built\touchview.built.bbb272a3.cache.css" />
+    <Content Include="staticfs\diazo\player-built\wxview.built.79caeb11.cache.js" />
+    <Content Include="staticfs\diazo\player-built\wxview.built.bd74843c.cache.css" />
+    <Content Include="staticfs\e5c009c761a4b073171744d2510f3e6b.png" />
+    <Content Include="staticfs\e9e2f474aeaefb85e3dadeba1b232180.jpg" />
+    <Content Include="staticfs\ee432bc2b1513cc4f6c1b17286e0ac0c.png" />
+    <Content Include="staticfs\epub360.ico" />
+    <Content Include="staticfs\f8f0a53a0b63831254dde4dfc68b954b.png" />
+    <Content Include="staticfs\fd4c63d7e7a346369cc1933465aacc04.png" />
+    <Content Include="staticfs\fe5de1c7ef145bc498158696ecc2ebbf.png" />
+    <Content Include="staticfs\index.js" />
+    <Content Include="staticfs\site-epub360\items.js" />
+    <Content Include="staticfs\system_varibles.js" />
+    <Content Include="staticfs\thirdparty\animate\animate.css" />
+    <Content Include="staticfs\thirdparty\g\device.js" />
+    <Content Include="staticfs\thirdparty\interaction_edit\template\map_qq.html" />
+    <Content Include="staticfs\thirdparty\jquery\jquery-1.8.1.js" />
+    <Content Include="staticfs\thirdparty\jswait\jswait.gif" />
+    <Content Include="staticfs\thirdparty\jswait\jswait.png" />
+    <Content Include="staticfs\thirdparty\jwplayer\HLSProvider6.swf" />
+    <Content Include="staticfs\thirdparty\jwplayer\jwplayer.flash.swf" />
+    <Content Include="staticfs\thirdparty\jwplayer\jwplayer.html5.js" />
+    <Content Include="staticfs\thirdparty\jwplayer\jwplayer.js" />
+    <Content Include="staticfs\thirdparty\jwplayer\README.html" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\background.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\bigplay.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\bigplay.svg" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\controls-ted.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\controls-wmp-bg.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\controls-wmp.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\controls.png" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\controls.svg" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\flashmediaelement-cdn.swf" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\flashmediaelement.swf" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\loading.gif" />
+    <Content Include="staticfs\thirdparty\mediaelementjs\silverlightmediaelement.xap" />
+    <Content Include="staticfs\thirdparty\play\img\ajax-loader.gif" />
+    <Content Include="staticfs\thirdparty\play\img\icon_logo_gray.png" />
+    <Content Include="staticfs\thirdparty\play\img\icon_more.png" />
+    <Content Include="staticfs\thirdparty\requireJS\require.js" />
+    <Content Include="staticfs\thirdparty\script\script.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="staticfs\common\css\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="staticfs\common\css\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="staticfs\common\css\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="staticfs\common\css\font-awesome\font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1432</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1432/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

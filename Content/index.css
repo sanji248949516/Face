@@ -1,0 +1,38 @@
+﻿@keyframes musicAround {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			50% {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+#music{
+			position: absolute;
+			z-index: 99999;
+			width: 44px;
+			height: 44px;
+			right: 10px;
+			bottom: 10px;
+		}
+		.playmusic{
+			-webkit-animation: musicAround 2s linear infinite;
+			-moz-animation: musicAround 2s linear infinite;
+			-ms-animation: musicAround 2s linear infinite;
+			-o-animation: musicAround 2s linear infinite;
+			animation: musicAround 2s linear infinite;
+		}

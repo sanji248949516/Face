@@ -1,0 +1,207 @@
+* {
+    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    background: url("../Images/bg.jpg") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.logo {
+    background: url("../Images/logo.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-tt2 {
+    background: url("../Images/sub_tt2.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-tt1 {
+    background: url("../Images/sub_tt1.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-sj {
+    background: url("../Images/sub_sj.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-icon1 {
+    background: url("../Images/sub_icon1.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-icon2 {
+    background: url("../Images/sub_icon2.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-btn1 {
+    background: url("../Images/btn1.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-btn2 {
+    background: url("../Images/btn2.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.sub-share {
+    background: url("../Images/share.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.feedbackbtn {
+    background: #1ABC9C;
+    color: #FFF;
+    width: 80px;
+    height: 40px;
+    line-height: 42px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 4%;
+    cursor: pointer;
+}
+
+.submit {
+    background: #1ABC9C;
+    color: #FFF;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 4%;
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+    line-height: 75px;
+}
+
+.score {
+    display: inline-block;
+    position: absolute;
+    background: #FFFFFF;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -54px;
+    width: 20px;
+    height: 42px;
+    line-height: 13px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 4px;
+    border-radius: 4px;
+}
+
+    .score:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 6px;
+        top: 100%;
+        width: 0;
+        height: 10px;
+        border-top: 5px solid #FFFFFF;
+        border-right: 5px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 0 solid transparent;
+    }
+
+    .score.high {
+        background: #FFDF00;
+        opacity: 0.8;
+    }
+
+        .score.high:after {
+            border-top: 5px solid #FFDF00;
+        }
+
+    .score.low {
+        background: #FFFFFF;
+    }
+
+        .score.low:after {
+            border-top: 5px solid #FFFFFF;
+        }
+
+.box {
+    border: 1px solid #FFFFFF;
+    position: absolute;
+}
+
+    .box.high {
+        border: 1px solid #FFDF00;
+    }
+
+    .box.low {
+        border: 1px solid #FFFFFF;
+    }
+
+.feedback {
+    width: 100%;
+    height: 100%;
+}
+
+
+.actpic {
+    -webkit-animation: actpic 3s ease-out 2s;
+       -moz-animation: actpic 3s ease-out 2s;
+        -ms-animation: actpic 3s ease-out 2s;
+         -o-animation: actpic 3s ease-out 2s;
+            animation: actpic 3s ease-out 2s;
+}
+@-webkit-keyframes actpic {
+    0% {-webkit-transform:scale(1);z-index: 2;
+    }
+    20% {-webkit-transform:scale(3);z-index: 999;
+    }
+    80% {-webkit-transform:scale(3);z-index: 999;
+    }
+    100% {-webkit-transform:scale(1);z-index: 2;
+    }
+}
+@keyframes actpic {
+    0% {transform:scale(1);z-index: 2;
+    }
+    20% {-webkit-transform:scale(3);z-index: 999;
+    }
+    80% {-webkit-transform:scale(3);z-index: 999;
+    }
+    100% {transform:scale(1);z-index: 2;
+    }
+}

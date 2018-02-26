@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CtrixDBModelStoreContainer" CdmEntityContainer="CtrixDBEntities">
+    <EntitySetMapping Name="BaiduFace">
+      <EntityTypeMapping TypeName="IsTypeOf(CtrixDBModel.BaiduFace)">
+        <MappingFragment StoreEntitySet="BaiduFace">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="file" ColumnName="file" />
+          <ScalarProperty Name="entityid" ColumnName="entityid" />
+          <ScalarProperty Name="success" ColumnName="success" />
+          <ScalarProperty Name="imgsrc" ColumnName="imgsrc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\发布的站点\baidu\Face</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/22/2016 10:28:12</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/22/2016 10:30:46</publishTime>
+    </File>
+    <File Include="bin/Face.dll">
+      <publishTime>06/26/2016 00:00:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/22/2016 10:28:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/22/2016 10:28:11</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/22/2016 10:28:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/22/2016 10:28:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/22/2016 10:28:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/22/2016 10:28:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/22/2016 10:28:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/22/2016 10:28:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/22/2016 10:28:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/22/2016 10:28:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/22/2016 10:28:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/22/2016 10:28:10</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/22/2016 10:28:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>08/08/2012 17:54:10</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:22</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="Content/index.css">
+      <publishTime>06/22/2016 17:01:19</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>06/23/2016 14:15:25</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="Content/swiper.min.css">
+      <publishTime>06/21/2016 15:40:21</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="Images/act_1.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/act_2.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/bg.jpg">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/btn.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/btn1.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/btn2.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/icon.png">
+      <publishTime>06/17/2016 16:07:15</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/l_tt.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/music.mp3">
+      <publishTime>06/22/2016 15:07:57</publishTime>
+    </File>
+    <File Include="Images/music.png">
+      <publishTime>06/22/2016 15:07:57</publishTime>
+    </File>
+    <File Include="Images/ren1.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/ren2.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/r_tt.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/say.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sc.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/Share.png">
+      <publishTime>06/17/2016 09:49:05</publishTime>
+    </File>
+    <File Include="Images/shou.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/shouji.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sub_icon1.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sub_icon2.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sub_sj.png">
+      <publishTime>06/22/2016 12:15:40</publishTime>
+    </File>
+    <File Include="Images/sub_tt1.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sub_tt2.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/sub_txt.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/title.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/zuiba.png">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/百度-谁是抢镜王5-01.jpg">
+      <publishTime>06/17/2016 17:25:32</publishTime>
+    </File>
+    <File Include="Images/百度-谁是抢镜王5-02.jpg">
+      <publishTime>06/17/2016 17:25:33</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>06/22/2016 10:30:49</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.sql">
+      <publishTime>06/25/2016 23:47:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/22/2016 10:30:49</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.15.0-build58334.js">
+      <publishTime>06/17/2016 13:58:54</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.15.0-build58334.min.js">
+      <publishTime>06/17/2016 13:58:54</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/22/2016 10:27:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/22/2016 10:27:58</publishTime>
+    </File>
+    <File Include="Scripts/exif.js">
+      <publishTime>06/21/2016 11:06:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/22/2016 10:28:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/22/2016 10:28:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/22/2016 10:28:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/22/2016 10:28:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/22/2016 10:28:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/22/2016 10:28:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/22/2016 10:28:14</publishTime>
+    </File>
+    <File Include="Scripts/lrz.js">
+      <publishTime>06/21/2016 11:06:36</publishTime>
+    </File>
+    <File Include="Scripts/mobileFix.mini.js">
+      <publishTime>06/21/2016 11:06:30</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/22/2016 10:28:12</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/22/2016 10:28:13</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/22/2016 10:28:13</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/22/2016 10:42:24</publishTime>
+    </File>
+    <File Include="staticfs/0559da7a8c9c6628af73c9e939d18c62.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/06d160425b373a9c94e7eeded3e31399.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/28e9658cf8863a64182375b1ded0b30e.png">
+      <publishTime>06/20/2016 10:21:06</publishTime>
+    </File>
+    <File Include="staticfs/2cb0e6a0cebf188ece7963b0bb327c34.png">
+      <publishTime>06/20/2016 10:21:06</publishTime>
+    </File>
+    <File Include="staticfs/42dcc242d720641da253c2ad5ff9d780.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/4f3ee71172f65ee445bd552953dbe120.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/584301ff72c7547eab3239f848797daf.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/5bae7e8bf9fd735effb98dc3588cfe58.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/64fd7185e06c35ef83e237b642a178ed.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/6d24d67df91604113650aa6295298b38.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/893583d17d35af72c9fd158d4dfddf58.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/admin-epub360/browser-old.html">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/admin-epub360/img/thumb.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/admin-epub360/public/loading.gif">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/admin-epub360/public/loading32x32.gif">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/aea13acf76c623068c92854d1d2ba962.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/b644b412ad278884db95412f713d8d40.jpg">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/bf8151f7ccde4a6301b16a1e70d0b880.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/c9e337d475226285f956f0e84b7a54b8.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/cae2dbdf28676ee64dc11289a10a0092.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/cf5302813665dfcb850219068e0f59a8.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/css/font-awesome-ie7.css">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/css/font-awesome-ie7.min.css">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/css/font-awesome.css">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/css/font-awesome.min.css">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/font/fontawesome-webfont.eot">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/font/fontawesome-webfont.svg">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/font/fontawesome-webfont.ttf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/font/fontawesome-webfont.woff">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/css/font-awesome/font/FontAwesome.otf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/g/device.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/interaction_edit/template/map_google.html">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/interaction_edit/template/map_qq.html">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jquery/jquery-1.8.1.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jswait/jswait.gif">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jswait/jswait.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jwplayer/HLSProvider6.swf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jwplayer/jwplayer.flash.swf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jwplayer/jwplayer.html5.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jwplayer/jwplayer.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/jwplayer/README.html">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/background.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/bigplay.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/bigplay.svg">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/controls-ted.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/controls-wmp-bg.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/controls-wmp.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/controls.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/controls.svg">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/flashmediaelement-cdn.swf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/flashmediaelement.swf">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/loading.gif">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/mediaelementjs/silverlightmediaelement.xap">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/play/img/ajax-loader.gif">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/play/img/icon_logo_gray.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/play/img/icon_more.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/common/js/requireJS/require.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/dcbb3dff8f28fea1c582635a188d57d5.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/diazo/css-built/newcbtview_built2013031.css">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/maximum_track%402x.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/media_pause%402x.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/media_play%402x.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/minimum_track%402x.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/slider_thumb%402x.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/audiobar/slider_thumb%402x副本.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/glyphicons-halflings.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/icon_fs.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/icon_more.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/icon_more_active.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/bus.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/busicon.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/close.png">
+      <publishTime>06/21/2016 17:44:09</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/drive.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/exit.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/navigate.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/trans_icons.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/map/turning.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/msg/icon_close.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/msg/icon_warn.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/img/screendirectionlock.png">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/js-built/interaction/cbtview-build2013031.js">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/js/app/main/interaction/iDevice.js">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/js/app/settings/requirejs_config.js">
+      <publishTime>06/21/2016 17:44:10</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/base.built.0127763d.cache.js">
+      <publishTime>06/21/2016 17:44:11</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/mobileview.built.cb47a88e.cache.js">
+      <publishTime>06/21/2016 17:44:12</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/mobileview.built.f23fff91.cache.css">
+      <publishTime>06/21/2016 17:44:12</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/require.built.5bc217a6.cache.js">
+      <publishTime>06/21/2016 17:44:13</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/touchview.built.99eef740.cache.js">
+      <publishTime>06/21/2016 17:44:14</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/touchview.built.bbb272a3.cache.css">
+      <publishTime>06/21/2016 17:44:14</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/wxview.built.79caeb11.cache.js">
+      <publishTime>06/21/2016 17:44:15</publishTime>
+    </File>
+    <File Include="staticfs/diazo/player-built/wxview.built.bd74843c.cache.css">
+      <publishTime>06/21/2016 17:44:15</publishTime>
+    </File>
+    <File Include="staticfs/e5c009c761a4b073171744d2510f3e6b.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/e9e2f474aeaefb85e3dadeba1b232180.jpg">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/ee432bc2b1513cc4f6c1b17286e0ac0c.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/epub360.ico">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/f8f0a53a0b63831254dde4dfc68b954b.png">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/fd4c63d7e7a346369cc1933465aacc04.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/fe5de1c7ef145bc498158696ecc2ebbf.png">
+      <publishTime>06/20/2016 10:21:05</publishTime>
+    </File>
+    <File Include="staticfs/index.js">
+      <publishTime>06/25/2016 23:59:43</publishTime>
+    </File>
+    <File Include="staticfs/site-epub360/items.js">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/system_varibles.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/animate/animate.css">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/g/device.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/interaction_edit/template/map_qq.html">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jquery/jquery-1.8.1.js">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jswait/jswait.gif">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jswait/jswait.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jwplayer/HLSProvider6.swf">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jwplayer/jwplayer.flash.swf">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jwplayer/jwplayer.html5.js">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jwplayer/jwplayer.js">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/jwplayer/README.html">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/background.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/bigplay.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/bigplay.svg">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/controls-ted.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/controls-wmp-bg.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/controls-wmp.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/controls.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/controls.svg">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/flashmediaelement-cdn.swf">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/flashmediaelement.swf">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/loading.gif">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/mediaelementjs/silverlightmediaelement.xap">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/play/img/ajax-loader.gif">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/play/img/icon_logo_gray.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/play/img/icon_more.png">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/requireJS/require.js">
+      <publishTime>06/20/2016 10:21:03</publishTime>
+    </File>
+    <File Include="staticfs/thirdparty/script/script.min.js">
+      <publishTime>06/20/2016 10:21:04</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>06/25/2016 23:59:43</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/25/2016 23:59:45</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/22/2016 10:27:50</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/22/2016 10:41:47</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/25/2016 23:54:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

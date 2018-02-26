@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>抢镜王驾到，路人甲速速绕行……</title>
+    <meta name="keywords" content="H5页面展示,H5网页展示,微场景应用,微信页面应用,微杂志案例, 微信场景应用">
+    <meta name="description" content="自带表情包？这技能真的没谁了……">
+    <meta name="author" content="epub360" />
+    <meta name="renderer" content="webkit">
+    <meta name="version" content="Epub360 2.0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/staticfs/f8f0a53a0b63831254dde4dfc68b954b.png">
+    <link rel="apple-touch-startup-image" href="/staticfs/f8f0a53a0b63831254dde4dfc68b954b.png">
+    <link rel="shortcut icon" href="/staticfs/epub360.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script src="/staticfs/thirdparty/script/script.min.js"></script>
+    <link rel="stylesheet" href="/staticfs/thirdparty/animate/animate.css" />
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="/Content/index.css" rel="stylesheet" />
+    <script>
+        var player_modules = [];
+        var loadmodules = [];
+        var MODULES_DICT = {
+
+        }
+    </script>
+    <script type="text/javascript">
+        _udn = "epub360.com";
+        var if_show_cover = 0;
+        var _gaq = _gaq || [];  // to ensure ga anlytics work in player
+        var _paq = _paq || [];
+        var data_link = ''; // to store the data not for sharing of paragraph/slide/.
+
+        var weixin_initial = 0, weixin_config_ready = 0, epub360_domain = 'epub360';
+    </script>
+    <script type="text/javascript">
+        function workEnd(type) { }
+        if (navigator.userAgent.indexOf("MSIE 8.0") >= 0) {
+            Array.prototype.indexOf = function (Object) {
+                for (var i = 0; i < this.length; i++)
+                    if (this[i] == Object)
+                        return i;
+                return -1;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/staticfs/diazo/player-built/mobileview.built.f23fff91.cache.css" />
+    <style type="text/css">
+        div.epub360-logo1, div.epub360-logo3 {
+            display: none;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        var epub360_domain = '';
+        var isMobilePlayer = 0;
+        // 判断是否为移动端运行环境
+        if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+            if (window.location.href.indexOf("?mobile") < 0) {
+                try {
+                    if (/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+                        // 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式
+                        isMobilePlayer = 1;
+                    }
+                    else {
+                        // 判断访问环境是 其他移动设备 则加载以下样式
+                    }
+                }
+                catch (e) { }
+            }
+        }
+        else {
+            // 如果以上都不是，则加载以下样式
+        }
+
+        (function () {
+            if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+                var ieversion = new Number(RegExp.$1);
+                if (ieversion <= 8) {
+                    if (typeof cbt_data != "undefined") {
+                        try {
+                            var slave_url = String(cbt_data.data.slave_url);
+                            if (slave_url && slave_url.length) {
+                                window.location.href = slave_url;
+                            }
+                            else
+                                window.location.href = '/staticfs/admin-epub360/browser-old.html';
+
+                        } catch (e) {
+                            window.location.href = '/staticfs/admin-epub360/browser-old.html';
+                        }
+                    }
+                }
+            }
+        })();
+    </script>
+
+    <script type="text/javascript">
+        var js_built = 1;
+        var preview_mode = 0;
+        var portal_url = '/';
+        var context_url = '/';
+        var ga_opt_target = document.location.origin + context_url, ga_opt_pagePath = context_url;
+        var context_type = 'PhotoGallery';
+        var web_url = '/staticfs/';
+        var dict = { "msg": "success", "code": 200, "data": {} };
+
+        var epub360 = epub360 || {};
+        epub360.settings = epub360.settings || {};
+
+        epub360.settings.pems = { 'has_analytics_src': false };
+
+
+        epub360.PlayerPlugins = epub360.PlayerPlugins || [];
+        var clear_loading_progress_waiting = 200;
+        window.epub360_userinfo = {};
+        window.epub360_sourceinfo = {};
+    </script>
+
+    <script type="text/javascript">
+        var epub360_book_type = 0;  // HTML PACKAGE
+    </script>
+</head>
+<body class="template-player portaltype-interaction-photogallery site-demo section-pic build" style="background-color: #000000;">
+    <img src="/images/music.png" id="music" class="resize playmusic" />
+    <audio src="/images/music.mp3" id="redrose" autoplay loop>
+        您的设备不支持播放该音频
+    </audio>
+
+    <div style="display:none;">
+        <img src="/staticfs/f8f0a53a0b63831254dde4dfc68b954b.png" />
+    </div>
+    <div class="reveal typo">
+        <div class="slides-wrap" style="position:absolute;width:100%;height:100%;left:0;top:0;z-index:1000;">
+            <div class="slides  c-transition-containment">
+
+                <section class="group" id="group_page_13853534097181">
+                    <section class="Presentation" id="page_13853534097181" style="background-color: rgba(255,255,255,1.0);">
+                        <div class="interaction-area typo">
+                            <div class="interaction-view"></div>
+                        </div>
+                        <input id="File1" name="File1" type="file" style="display:none;" />
+                        
+                    </section>
+                </section>
+                <div class="slideTempContainer" style="position:absolute;left:-99999px;top:-99999px;"></div>
+            </div>
+        </div>
+        <div class="alert-text" style="position:absolute;width:100%;height:100%;left:0;top:0;display:none;background-color:#000000;opacity:0.8;">请上传竖向照片</div>
+    </div>
+
+
+
+    <div id="jswait-loading" class="prejsloading" style='position:absolute;z-index:999999;background-color: rgb(0, 0, 0); left:0;top:0;width:100%;height:100%;margin:0;padding:0;text-align: center; display: block;'>
+
+        <div style="position:absolute;left:50%;top:50%;width:90px; height:2px; margin-left:-45px; margin-top:0px; background-image:none; background-color:#c9c9c9; -webkit-box-shadow: none !important; box-shadow: none !important;" class="progress active"><div id="loading-progress" class="bar" style="width: 0%; height:100%; background-image:none;background: rgb(153, 0, 255) !important; box-shadow: none; text-shadow: none !important; filter: none;"></div></div>
+    </div>
+    <script type="text/javascript">
+
+        var loading_progress_percent = 15;
+        var loading_progress_timer = setInterval(function () {
+            compute_loadding_progress();
+            set_loading_progress();
+        }, 200);
+        function compute_loadding_progress() {
+
+            if (loading_progress_percent < 70)
+                loading_progress_percent = loading_progress_percent + 5;
+            else if (loading_progress_percent > 70 && loading_progress_percent < 100)
+                loading_progress_percent = loading_progress_percent + 10;
+            else {
+                clear_loading_progress();
+            }
+
+        }
+        function set_loading_progress(i) {
+            if (document.getElementById('loading-progress') != null) {
+                document.getElementById('loading-progress').style.width = loading_progress_percent + '%';
+            }
+        }
+        function clear_loading_progress() {
+            clearInterval(loading_progress_timer);
+            if (typeof loading_progress_timer1 != 'undefined') {
+                clearInterval(loading_progress_timer1);
+
+                interaction_view.containment.children('.prejsloading').fadeOut(1500, function () {
+                    interaction_view.containment.children('.prejsloading').remove();
+                    interaction_view.play(interaction_view.currentPage);
+                    if (window.loadAnalytics) loadAnalytics();
+                })
+            }
+        }
+
+
+    </script>
+
+    <script type="text/javascript" src="/staticfs/index.js"></script>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+    <script type="text/javascript" src="/staticfs/diazo/player-built/require.built.5bc217a6.cache.js"></script>
+    <script type="text/javascript" src="/staticfs/thirdparty/jquery/jquery-1.8.1.js"></script>
+    <script type="text/javascript">
+        var epub360_player = [];
+        if (isMobilePlayer) {
+            epub360_player = '/staticfs/diazo/player-built/mobileview.built.cb47a88e.cache.js';
+        } else {
+            epub360_player = '/staticfs/diazo/player-built/touchview.built.99eef740.cache.js';
+        }
+        player_modules.push(epub360_player);
+    </script>
+
+
+
+    <!-- 分享信息-->
+    <script type="text/javascript">
+
+        window.js_loaded = false;
+        $script(player_modules, 'player');
+        $script.ready('player', function () {
+            var _i = window.setInterval(function () {
+                if (window.start_player) {
+                    if (loadmodules.length) {
+                        $script(loadmodules, 'modules');
+                        $script.ready('modules', function () {
+                            console.log('loaded');
+                            window.js_loaded = true;
+                            window.start_player();
+                        })
+                    }
+                    else {
+                        window.js_loaded = true;
+                        window.start_player();
+                    }
+                    clearInterval(_i);
+                }
+            }, 50);
+        })
+
+        var bookTitle = '抢镜王驾到，路人甲速速绕行……';
+        var msgContent = '自带表情包？这技能真的没谁了……'; // 微信分享描述
+        var descContent = msgContent; // 1.0兼容
+        var msgTitle = '抢镜王驾到，路人甲速速绕行……'; // 微信转发标题
+        var shareTitle = '自带表情包？这技能真的没谁了……'; // 微信分享朋友圈标题
+        var appid = '';
+
+        // 微信分享图片
+        var imgUrl = "/staticfs/f8f0a53a0b63831254dde4dfc68b954b.png";
+
+
+        if (imgUrl.indexOf(window.location.protocol) < 0) {
+            if (imgUrl[0] == '.') {
+                imgUrl = '/' + imgUrl;
+            }
+            imgUrl = window.location.protocol + '//' + window.location.host + imgUrl;
+        }
+
+        var localUrl = window.location.origin + window.location.pathname;
+        var localSearch = '';
+
+        if (window.location.search.indexOf('disableHistoryStart') >= 0) {
+            localSearch = window.location.search;
+        } else {
+            if (window.location.search) {
+                localSearch = window.location.search + '&disableHistoryStart=1';
+            } else {
+                localSearch = '?disableHistoryStart=1';
+            }
+        }
+
+        // 微信分享网址
+        var message_link = localUrl + localSearch;
+        var ua = navigator.userAgent.toLowerCase();
+
+        if (/micromessenger/.test(ua)) {
+
+            page_v = message_link.match(/&pageid=page_(\w*)/);
+            if (message_link.indexOf('return=1') != -1) {
+
+                // 打开新网页后返回的处理,避免因为带有from参数而无法定位
+                message_link = message_link.replace('return=1', '');
+
+            } else if (message_link.indexOf('disableHistoryStart=1') == -1 && page_v && page_v.length) {
+
+                // 设置了指定分享页的
+                page_query_string = page_v[0];
+                page_id = 'page_' + page_v[1];
+                // message_link = message_link.replace(page_query_string,'');
+                location.hash = '#page/' + page_id;
+
+            } else {
+
+                // 来自朋友圈分享／转发消息
+                if (window.location.search.indexOf('from=') > 0) {
+                    location.hash = '';
+                }
+            }
+        }
+
+        // 背景音乐文件处理
+        if (typeof bgsound_id != "undefined" && window.location.search.indexOf(bgsound_id) >= 0) {
+
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == bgsound_id) {
+                    bgsound_src = pair[1];
+                    break;
+                }
+            }
+        }
+
+        // 严格依照微信JS-SDK说明文档开发 http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+
+        var audio, audioelement;
+        function playbgsound() {
+            if (typeof bgsound_id != "undefined" && typeof bgsound_src != "undefined") {
+                var newElement = document.createElement('div');
+                newElement.id = 'soundcontainer';
+                document.body.appendChild(newElement);
+                var audiocontainer = document.getElementById('soundcontainer');
+                var gSound = bgsound_src;
+                audiocontainer.innerHTML = '<audio id="bgsound" loop="loop"> <source src="' + gSound + '" /> </audio>';
+                audio = document.getElementById('bgsound');
+                audio.src = gSound;
+                audio.play();
+                if (!audioelement) audio.pause();
+                else interaction_view.playbgsound();
+            }
+        }
+        /*
+           * 注意：
+           * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+           * 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+           * 3. 完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+           *
+           * 如有问题请通过以下渠道反馈：
+           * 邮箱地址：weixin-open@qq.com
+           * 邮件主题：【微信JS-SDK反馈】具体问题
+           * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+        */
+        //处理不是微信的情况下音频的播放
+        var ua = navigator.userAgent.toLowerCase();
+        if (!(/micromessenger/.test(ua))) {
+            if (window.location.search.indexOf('autoplay=false') == -1 && isMobilePlayer) {
+                playbgsound();
+
+            }
+        };
+    </script>
+
+    <script src="/Scripts/mobileFix.mini.js"></script>
+    <script src="/Scripts/exif.js"></script>
+    <script src="/Scripts/lrz.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#redrose")[0].play();
+            setTimeout(function () {
+                $('.image_wrap').eq(8).click(function () {
+                    $(".alert-text").show(function () {
+                        setTimeout(function () {
+                            $(".alert-text").hidden();
+                            $('#File1').click();
+                        }, 3000);
+                    });
+                })
+            }, 2000);
+            var img = '';
+            $("#File1").on("change", function () {
+                lrz(this.files[0], { width: 1000 }, function (results) {
+                    //$("#pic0").attr("src", results.base64);//预览图片
+                    img = results.base64;
+                    $.ajax({
+                        type: "post",
+                        async: false,
+                        url: "/Home/UploadImages",
+                        data: { imgbase: img },
+                        success: function (data) {
+                            location.href = "/Home/Contact?id=" + data.BFID;
+                        }
+                    });
+                });
+
+            });
+        })
+
+    </script>
+    <script type="text/javascript">
+        var title = "抢镜王驾到，路人甲速速绕行……";
+        var desc = "自带表情包？这技能真的没谁了……";
+        var link = "http://market.itcgb.com/";
+        var imgUrl = "http://market.itcgb.com/Images/icon.png";
+    </script>
+    <script type="text/javascript">
+        document.write('<scr' + 'ipt type="text/javascript" src="http://market.itcgb.com/wxapi/ShareAPI.aspx?url=' + encodeURIComponent(window.location.href) + '"></scr' + 'ipt>');
+    </script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var music = document.getElementById("music");
+            var redRose = document.getElementById("redrose");
+            music.onclick = function () {
+                if (redRose.paused) {
+                    redRose.play();
+                    this.className = "playmusic";
+                } else {
+                    redRose.pause();
+                    this.className = "";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
